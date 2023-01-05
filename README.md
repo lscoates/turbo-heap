@@ -2,6 +2,9 @@
 
 This is a simple Rails 7 app using turbo frames and the Heap js snippet for testing an issue where the `Turbo-Frame` header is dropped from certain requests, causing a full-page reload.
 
+## Deployed to Heroku
+https://turbo-heap.herokuapp.com/
+
 ## Reproducing the Issue
 
 In general we can reproduce the issue by:
