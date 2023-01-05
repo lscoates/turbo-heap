@@ -23,4 +23,3 @@ test:
 
 production:
   <<: *default
-  database: turbo_heap_production
