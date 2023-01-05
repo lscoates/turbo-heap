@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+
+Content not part of the turbo frame.
+
+<% if @posts.any? %>
+  <%= render "posts", posts: @posts, current_post: @posts.first %>
+<% end %>

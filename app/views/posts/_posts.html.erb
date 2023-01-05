@@ -1,0 +1,17 @@
+<%= turbo_frame_tag "post_view" do %>
+  <div style="width:100%;display:flex;margin-top:20px;border:solid;border-color:red;">
+    <div>
+      <ul>
+        <% posts.each do |post| %>
+          <li>
+            <%= link_to post.title, post_path(post) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div style="margin-left:20px">
+      <h2><%= current_post.title %></h2>
+      <p><%= current_post.body %></p>
+    </div>
+  </div>
+<% end %>
